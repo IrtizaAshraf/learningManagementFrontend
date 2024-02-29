@@ -18,7 +18,7 @@ const StudentList = ({ fetch, setfetch }) => {
   useEffect(() => {
     const fetchStudents = async () => {
       try {
-        const response = await axios.get(URL + "/api/v1/std");
+        const response = await axios.get(URL + "/api/v1/students");
         setStudents(response.data.student);
       } catch (error) {
         console.error("Error fetching students:", error);
@@ -30,7 +30,7 @@ const StudentList = ({ fetch, setfetch }) => {
 
   const deleteStd = (id, index) => {
     try {
-      const response = axios.delete(URL + `/api/v1/std/${id}`);
+      const response = axios.delete(URL + `/api/v1/students/${id}`);
       setfetch(true)
     
     } catch (error) {

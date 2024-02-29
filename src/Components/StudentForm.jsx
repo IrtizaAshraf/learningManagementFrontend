@@ -18,7 +18,7 @@ const StudentForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(URL + "/api/v1/std", formData);
+      await axios.post(URL + "/api/v1/students", formData);
       setfetch(true);
     } catch (error) {
       // Handle error (e.g., show an error message)
