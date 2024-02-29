@@ -10,7 +10,7 @@ const CourseForm = () => {
   const [timing, settiming] = useState("");
   const [fetch, setfetch] = useState(false);
 
-  const URL = "http://localhost:3001";
+  const URL = "http://localhost:3005";
 
   const handleSubmit = async (e) => {
     e.preventDefault();

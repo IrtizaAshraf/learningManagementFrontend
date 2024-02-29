@@ -14,7 +14,7 @@ import {
 
 const StudentList = ({ fetch, setfetch }) => {
   const [students, setStudents] = useState([]);
-  const URL = "http://localhost:3001";
+  const URL = "http://localhost:3005";
   useEffect(() => {
     const fetchStudents = async () => {
       try {
